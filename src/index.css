@@ -1,0 +1,703 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .header {
+  margin-top: 34px;
+  margin-bottom: 34px;
+  width: 1110px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header .active {
+  fill: #43d854;
+  color: #43d854;
+}
+
+body .header .main-menu {
+  font-size: 17px;
+  display: flex;
+  grid-gap: 30px;
+  align-items: center;
+  list-style: none;
+}
+body .header .notification-counter {
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  width: 17px;
+  height: 17px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+body .header a,
+body .header .login {
+  text-decoration: none;
+  color: #101010;
+  cursor: pointer;
+}
+body .page {
+  width: 1110px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .displaynone   {
+  display: none;
+}
+body .page .commercial {
+  height: 197px;
+  margin: 4px 0 75px 0;
+  background-color: #101010;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  align-self: stretch;
+  display: flex;
+}
+body .page .commercial .commercial-title {
+  color: white;
+  font-size: 30px;
+  padding: 50px 0 0 50px;
+}
+
+body .page .block-game-title {
+  font-size: 20px;
+  color: #838383;
+}
+body .page .block-game-preview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  padding: 18px 0 30px 0;
+}
+body .page .block-game-preview a {
+  text-decoration: none;
+  color: #000;
+}
+body .page .game-preview:hover {
+  transition: all 0.2s;
+  transform: scale(1.05);
+}
+body .page .block-game-more {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+body .page .block-game-more a.game-more {
+  cursor: pointer;
+  padding: 12px 32px;
+  border: 0;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1c1c27;
+  text-decoration: none;
+}
+body .page .paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  margin: 16px 0;
+  background-color: #fff;
+  color: #1c1c27;
+  border-radius: 30px;
+  width: 1000px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  line-height: 21px;
+  font-size: 17px;
+}
+body .page .paragraph-title {
+  font-weight: 600;
+}
+body .page .paragraph-text {
+  padding-top: 15px;
+  font-weight: 400;
+}
+body .page .our-contact {
+  display: grid;
+  grid-template-columns: 760px 100px;
+  grid-gap: 60px;
+}
+body .page .our-contact .we-on-map {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+body .page .our-contact .we-on-map .map img {
+  padding: 20px;
+  border-radius: 30px;
+}
+body .page .our-contact .we-on-map .adress {
+  padding: 0 20px 20px 20px;
+  display: grid;
+  grid-template-columns: 22px auto;
+  grid-gap: 0 10px;
+  align-content: center;
+}
+body .page .our-contact .we-on-map .adress .wrapper {
+  grid-row: 1/3;
+}
+body .page .our-contact .we-on-map .adress div {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+body .page .our-contact .we-on-map .adress div:last-child {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #838383;
+}
+body .page .our-contact .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+body .page .our-contact .social a {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin: 7px 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+body .page .our-contact .social a:first-child {
+  margin-top: 0;
+}
+body .page .our-contact .number-phone {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  line-height: 30px;
+}
+body .page .our-contact .number-phone div {
+  margin: 0 28px;
+}
+body .page .basket {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 13px 60px;
+}
+body .page .basket-title {
+  grid-column: 1/3;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c1c27;
+}
+body .page .basket .pre-order {
+  align-self: start;
+  background-color: #fff;
+  border-radius: 30px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+body .page .basket .pre-order .total {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+body .page .basket .pre-order .total-price::before {
+  content: "₽ ";
+}
+body .page .basket .pre-order a {
+  background-color: #101010;
+  color: #fff;
+  border-radius: 20px;
+  padding: 22px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+}
+body .page .ordering {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 13px 30px;
+}
+body .page .ordering-title {
+  grid-column: 1/3;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c1c27;
+}
+body .page .ordering .customer-info,
+body .page .ordering .order,
+body .page .ordering .payment,
+body .page .ordering .customer-number {
+  align-self: start;
+  min-width: 445px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+body .page .ordering .customer-info input,
+body .page .ordering .order input,
+body .page .ordering .payment input,
+body .page .ordering .customer-number input {
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  background: #d6d6d6;
+  color: #8e8e8e;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 12px;
+  outline: none;
+}
+body .page .ordering .customer-info input:focus,
+body .page .ordering .order input:focus,
+body .page .ordering .payment input:focus,
+body .page .ordering .customer-number input:focus {
+  border: 1px solid grey;
+}
+body .page .ordering .customer-info-title,
+body .page .ordering .order-title,
+body .page .ordering .payment-title,
+body .page .ordering .customer-number-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+body .page .ordering .customer-info .string,
+body .page .ordering .order .string,
+body .page .ordering .payment .string,
+body .page .ordering .customer-number .string {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 10px;
+}
+body .page .ordering .customer-info .string-icon,
+body .page .ordering .order .string-icon,
+body .page .ordering .payment .string-icon,
+body .page .ordering .customer-number .string-icon {
+  min-width: 20px;
+}
+body .page .ordering .customer-info .string-text,
+body .page .ordering .order .string-text,
+body .page .ordering .payment .string-text,
+body .page .ordering .customer-number .string-text {
+  word-wrap: break-word;
+  padding: 0 10px 0 10px;
+  flex-grow: 1;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+body .page .ordering .customer-info .string .lite,
+body .page .ordering .order .string .lite,
+body .page .ordering .payment .string .lite,
+body .page .ordering .customer-number .string .lite {
+  color: #838383;
+}
+body .page .ordering .customer-info .string-last,
+body .page .ordering .order .string-last,
+body .page .ordering .payment .string-last,
+body .page .ordering .customer-number .string-last {
+  min-width: 50px;
+  text-align: right;
+}
+body .page .ordering .customer-info .string:last-child,
+body .page .ordering .order .string:last-child,
+body .page .ordering .payment .string:last-child,
+body .page .ordering .customer-number .string:last-child {
+  margin-bottom: 0;
+}
+body .page .ordering .customer-info {
+  grid-row: 2/6;
+}
+body .page .ordering button#finish-order {
+  background: #101010;
+  box-shadow: 0px 0px 20px rgba(67, 216, 84, 0.25);
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
+body .page .ordering_finish {
+  background-color: #fff;
+  color: #1c1c27;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  padding: 35px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  min-width: 730px;
+}
+body .page .about_game {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-gap: 13px 30px;
+}
+body .page .about_game .colomn_left .sketch,
+body .page .about_game .colomn_left .cover {
+  border-radius: 30px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+body .page .about_game .colomn_left .sketch img,
+body .page .about_game .colomn_left .cover img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+body .page .about_game .colomn_left .sketch:nth-child(2),
+body .page .about_game .colomn_left .cover:nth-child(2) {
+  grid-row: 2/3;
+}
+body .page .about_game .colomn_left .sketch:nth-child(3),
+body .page .about_game .colomn_left .cover:nth-child(3) {
+  grid-row: 3/4;
+}
+body .page .about_game .colomn_left .cover {
+  width: 405px;
+  height: 405px;
+  grid-row: 1/4;
+  margin-bottom: 18px;
+}
+body .page .about_game .colomn_left .reviews {
+  align-self: start;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: stretch;
+  padding: 20px;
+  grid-column: 1/3;
+}
+body .page .about_game .colomn_left .reviews-title {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+body .page .about_game .colomn_left .reviews-rating {
+  padding: 0 25px 0 10px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #838383;
+}
+body .page .about_game .colomn_right {
+  display: block;
+}
+body .page .about_game .colomn_right button {
+  background: #101010;
+  padding: 3px 14px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+}
+body .page .about_game .colomn_right button .text {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 0 5px;
+}
+body .page .about_game .colomn_right button:nth-child(2) {
+  justify-content: center;
+}
+body .page .about_game .colomn_right button:nth-child(3) {
+  justify-content: center;
+  background-color: #43d854;
+}
+body .page .about_game .colomn_right .article {
+  grid-column: 1/4;
+  background: #f9f9f9;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-top: 30px;
+  padding-bottom: 24px;
+}
+body .page .about_game .colomn_right .article h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c1c27;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  margin-bottom: 16px;
+}
+body .page .about_game .colomn_right .article h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c1c27;
+  padding: 5px 30px 0 30px;
+  margin-top: 5px;
+}
+body .page .about_game .colomn_right .article p,
+body .page .about_game .colomn_right .article ul {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1c1c27;
+  padding: 5px 30px;
+  list-style: none;
+}
+body .page .about_game .colomn_right .article p .article__genre{
+  padding: 0;
+}
+body .footer {
+  width: 1110px;
+  height: 105px;
+  background-color: #ffffff;
+  margin-top: 100px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+body .footer .section {
+  display: flex;
+  flex-direction: column;
+}
+body .footer .section:last-child {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+body .footer .section a {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 5px;
+  text-decoration: none;
+  color: #101010;
+}
+body .footer .section:first-child {
+  font-size: 25px;
+}
+body #blind {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #blind[ishide="false"] {
+  display: none;
+}
+
+.game-preview {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 300px;
+  color: #1c1c27;
+  text-decoration: none;
+}
+.game-preview-wrapper {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-preview-wrapper img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.game-preview-desc {
+  display: block;
+  grid-template-columns: 4fr 1fr;
+  word-wrap: break-word;
+  font-size: 17px;
+  padding: 16px;
+  height: 30%;
+  text-decoration: none;
+}
+.game-preview-desc-title {
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.game-preview-desc-price {
+  bottom: 0;
+  color: #ffa542;
+}
+.game-preview-desc-price::before {
+  content: "₽ ";
+}
+
+.registration-form {
+  border-radius: 30px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 11px 35px;
+}
+.registration-form-title {
+  margin: 12px;
+}
+.registration-form-lineedit {
+  margin-bottom: 24px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  background: #d6d6d6;
+  color: #8e8e8e;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 12px;
+  min-width: 368px;
+  outline: none;
+}
+.registration-form-lineedit:focus {
+  border: 1px solid grey;
+}
+
+.logo a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #101010;
+}
+
+.added-game {
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 16px;
+  max-width: 633px;
+}
+.added-game-cover {
+  width: 175px;
+  height: 144px;
+  overflow: hidden;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1/4;
+}
+.added-game-cover img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.added-game-name {
+  padding: 0 46px;
+  font-size: 17px;
+}
+.added-game-price {
+  font-size: 15px;
+  color: #aaaaaa;
+  line-height: 18px;
+  padding: 0 46px;
+}
+.added-game-price::before {
+  content: "₽ ";
+}
+.added-game-delete {
+  justify-self: end;
+  padding: 5px 5px 0 0;
+  cursor: pointer;
+}
+.added-game-counter {
+  justify-self: center;
+  display: flex;
+  align-content: center;
+  margin-top: 8px;
+}
+.added-game-counter button {
+  background-color: #ffce7f;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.added-game-counter .added-game-count {
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+.added-game-allprice {
+  justify-self: end;
+  align-self: end;
+  font-size: 15px;
+  line-height: 18px;
+  color: #101010;
+  padding: 0 5px 5px 0;
+}
+.added-game-allprice::before {
+  content: "₽ ";
+}
+
