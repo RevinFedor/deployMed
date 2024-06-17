@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MedOnko/static/css/main.ebb764aa.css",
+    "main.js": "/MedOnko/static/js/main.961a9472.js",
+    "static/media/map.png": "/MedOnko/static/media/map.ec0e7d0c6b884d68251f.png",
+    "static/media/usericon.png": "/MedOnko/static/media/usericon.ae3a914be1e9f200b221.png",
+    "index.html": "/MedOnko/index.html",
+    "main.ebb764aa.css.map": "/MedOnko/static/css/main.ebb764aa.css.map",
+    "main.961a9472.js.map": "/MedOnko/static/js/main.961a9472.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebb764aa.css",
+    "static/js/main.961a9472.js"
+  ]
+}
